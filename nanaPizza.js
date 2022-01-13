@@ -37,5 +37,12 @@ for (const [ingredient, values] of Object.entries(allIngredients)) {
         finalCombo.push(ingredient)
     }
 }
-console.log(finalCombo);
 
+function printResult(ingredients){
+    const ingredientsSize = finalCombo.length
+    const listOfIngredients = finalCombo.join(' ');
+
+    console.log(`${ingredientsSize} ${listOfIngredients}`);
+}
+
+printResult(finalCombo)
